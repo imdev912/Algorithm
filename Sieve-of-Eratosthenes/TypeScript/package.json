@@ -1,0 +1,27 @@
+{
+    "type": "module",
+    "name": "sieve-of-eratosthenes",
+    "version": "1.0.0",
+    "description": "an efficient algorithm for finding all prime numbers up to a specified limit.",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "sieve",
+        "eratosthenes",
+        "prime",
+        "prime numbers",
+        "algorithm",
+        "mathematics",
+        "number theory",
+        "number generation"
+    ],
+    "author": "@imdev912",
+    "license": "GPL-3.0",
+    "devDependencies": {
+        "typescript": "^5.2.2"
+    }
+}
