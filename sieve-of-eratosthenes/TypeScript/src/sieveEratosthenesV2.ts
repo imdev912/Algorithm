@@ -1,4 +1,4 @@
-export const sieveEratosthenes = (limit: number) => {
+export const sieveEratosthenes = (limit: number): number[] => {
     // limit is less then 2, no prime number exists
     if (limit < 2) return [];
 

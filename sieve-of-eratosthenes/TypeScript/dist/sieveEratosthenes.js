@@ -11,6 +11,6 @@ export const sieveEratosthenes = (limit) => {
     }
     const primes = isPrime
         .map((prime, index) => prime ? index : null)
-        .filter((prime) => prime !== null);
+        .filter((prime) => prime !== null) || [];
     return primes;
 };

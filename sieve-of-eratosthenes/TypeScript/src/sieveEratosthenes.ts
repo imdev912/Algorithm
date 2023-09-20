@@ -1,4 +1,4 @@
-export const sieveEratosthenes = (limit: number) => {
+export const sieveEratosthenes = (limit: number): number[] => {
     // create an array of boolean values where each each represents a number.
     // initially, assume all numbers are prime.
     const isPrime = new Array(limit + 1).fill(true);
@@ -21,7 +21,7 @@ export const sieveEratosthenes = (limit: number) => {
     // collect all prime numbers in an array
     const primes = isPrime
     .map((prime, index) => prime ? index : null)
-    .filter((prime) => prime !== null);
+    .filter((prime): prime is number => prime !== null) || [];
 
     return primes;
 };
